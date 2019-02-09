@@ -3,7 +3,7 @@
 Simples Reader Writer Lock über Dateien in einem Verzeichnis.
 Parallel sind mehrere Reader erlaubt, aber nur ein Writer.
 
-## mehrere Eeader gleichzeitig
+## mehrere Reader gleichzeitig
 ```
 IRWLock testlock = RWLockFactory.Create("woauchimmer');
 
