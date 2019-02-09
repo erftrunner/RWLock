@@ -47,6 +47,11 @@ namespace Test.RWLock
             {
                 Assert.Pass();
             }
+            finally
+            {
+                testlock.ReadUnlock();
+                testlock.WriteUnlock();
+            }
             
             Directory.Delete(testpath, true);
             Assert.Fail();
